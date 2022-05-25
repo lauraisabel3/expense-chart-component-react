@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { breakPoints as bp } from "../../styles/breakPoints";
 
 const Container = styled.div `
   width: 100%;
@@ -8,11 +9,20 @@ const Container = styled.div `
   padding: 20px;
   background-color: var(--light-orange);
   border-radius: 12px;
+
+  ${bp.desktop} {
+    max-width: 1600px;
+    margin: 40px auto 0 auto;
+  }
 `
 
 const Title = styled.h1 `
   font-size: 1.8rem;
   color: var(--dark-brown);
+
+  ${bp.desktop} {
+    font-size: 2.2rem;
+  }
 `
 
 const ColumnsContainer = styled.div `
@@ -61,6 +71,14 @@ const Price = styled.h3 `
     font-weight: 700;
     color: var(--dark-brown);
   }
+
+  ${bp.desktop} {
+    font-size: 1.8rem;
+
+    span {
+      font-size: 2.2rem;
+    }
+  }
 `
 
 const Discount = styled.h5 ` 
@@ -76,6 +94,10 @@ const Discount = styled.h5 `
   span {
     font-weight: 400;
     color: var(--medium-brown);
+  }
+
+  ${bp.desktop} {
+    font-size: 1.8rem;
   }
 
 `

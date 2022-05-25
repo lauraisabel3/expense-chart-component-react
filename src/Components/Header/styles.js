@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import { breakPoints as bp } from "../../styles/breakPoints";
 
 const Container = styled.div `
   width: 100%;
@@ -10,6 +11,11 @@ const Container = styled.div `
   align-items: center;
   background-color: var(--red);
   border-radius: 12px;
+
+  ${bp.desktop} {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 `
 
 const Title = styled.h1 `
@@ -21,6 +27,14 @@ const Title = styled.h1 `
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--light-orange);
+  }
+
+  ${bp.desktop} {
+    font-size: 1.8rem;
+
+    span {
+      font-size: 2.2rem;
+    }
   }
 `
 

@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { breakPoints as bp } from "../../styles/breakPoints";
 
 const ColumnContainer = styled.div `
   width: 100%;
@@ -13,6 +14,12 @@ const ColumnContainer = styled.div `
     margin-top: 8px;
     font-weight: 400;
     color: var(--medium-brown);
+  }
+
+  ${bp.desktop} {
+    span {
+      font-size: 1.4rem;
+    }
   }
 `
 const Column = styled.div `
@@ -38,6 +45,10 @@ const Amount = styled.div `
     font-weight: 700;
     font-family: inherit;
     color: var(--cream);
+  }
+
+  ${bp.desktop} {
+    font-size: 1.8rem;
   }
   
 `
