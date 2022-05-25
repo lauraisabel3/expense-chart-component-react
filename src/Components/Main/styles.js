@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { breakPoints as bp } from "../../styles/breakPoints";
+import { breakPoints as bp } from "../../Styles/breakPoints";
 
 const Container = styled.div `
   width: 100%;
